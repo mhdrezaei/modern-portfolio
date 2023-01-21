@@ -85,14 +85,21 @@
       content="assets/favicons/ms-icon-144x144.png"
     />
     <meta name="theme-color" content="#ffffff" />
-    <script src="assets/js/config.js"></script>
+    <script type="module" src="assets/js/config.js"></script>
   </head>
   <body>
     <div class="loading">
       <div class="loading__box">
+        <img
+          class="loading__svg"
+          src="assets/images/maze-sphere.svg"
+          alt="Sphere svg"
+        />
         <div class="loading__text">
           L<span class="loading__text--dot"></span>ADING EXPRENCE
-          <div class="loading__text--border"></div>
+          <div
+            class="loading__text--border loading__text__width--animation"
+          ></div>
         </div>
         <div class="loading__bar">
           <div class="loading__bar--inner"></div>
@@ -103,5 +110,6 @@
         </div>
       </div>
     </div>
+    <script type="module" src="assets/js/app.js"></script>
   </body>
 </html>

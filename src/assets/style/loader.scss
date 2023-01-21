@@ -6,7 +6,7 @@
   bottom: 0;
   width: 100%;
   height: 100vh;
-  background-color: darkblue;
+  background-color: #0a0a31;
   display: grid;
   place-items: center;
   z-index: 99;
@@ -18,6 +18,14 @@
     border: 3px solid #00ffff6d;
     border-left: 3px solid cyan;
     border-right: 3px solid cyan;
+  }
+  &__svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    opacity: 0;
   }
   &__text {
     font-family: "Orbitron";
@@ -38,6 +46,17 @@
       bottom: 0;
       left: 50%;
       transform: translateX(-50%);
+    }
+    &__width--animation {
+      animation: width_animation 1s forwards;
+      @keyframes width_animation {
+        0% {
+          width: 85%;
+        }
+        100% {
+          width: 270px;
+        }
+      }
     }
 
     &--dot {
@@ -71,7 +90,7 @@
     border-radius: 2px;
 
     &--inner {
-      width: 50%;
+      width: 0;
       height: 100%;
       background-color: cyan;
     }
