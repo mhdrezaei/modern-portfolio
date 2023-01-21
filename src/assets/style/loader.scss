@@ -1,0 +1,116 @@
+.loading {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #0a0a31;
+  display: grid;
+  place-items: center;
+  z-index: 99;
+
+  &__box {
+    position: relative;
+    width: 500px;
+    height: 200px;
+    border: 3px solid #00ffff6d;
+    border-left: 3px solid cyan;
+    border-right: 3px solid cyan;
+  }
+  &__svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    opacity: 0;
+  }
+  &__text {
+    font-family: "Orbitron";
+    position: relative;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 1rem;
+    color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--border {
+      width: 85%;
+      height: 1px;
+      background-color: #00ffff6d;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &__width--animation {
+      animation: width_animation 1s forwards;
+      @keyframes width_animation {
+        0% {
+          width: 85%;
+        }
+        100% {
+          width: 270px;
+        }
+      }
+    }
+
+    &--dot {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: #fff;
+      margin: 0 3px;
+      animation: pulse 1s infinite;
+
+      @keyframes pulse {
+        from {
+          opacity: 0;
+          background-color: cyan;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  &__bar {
+    position: absolute;
+    width: 90%;
+    height: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ccc;
+    border-radius: 2px;
+
+    &--inner {
+      width: 0;
+      height: 100%;
+      background-color: cyan;
+    }
+  }
+
+  &__counter {
+    font-family: "Orbitron";
+    width: 100%;
+    position: absolute;
+    top: 70%;
+    left: 0;
+    font-size: 20px;
+    color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+
+    &--number {
+      color: cyan;
+    }
+  }
+}

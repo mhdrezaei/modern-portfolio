@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+  &::after,
+  &::before {
+    box-sizing: border-box;
+  }
+}
+
+html,
+body {
+  overflow-x: hidden;
+  background-color: #444;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+img,
+video,
+canvas,
+svg {
+  max-width: 100%;
+}

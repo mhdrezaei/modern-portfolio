@@ -1,0 +1,45 @@
+.landing {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  color: #fff;
+  overflow: hidden;
+
+  & .header {
+    position: absolute;
+    left: 50%;
+    top: 1rem;
+    width: 80vw;
+    transform: translateX(-50%);
+
+    &__wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__left {
+      width: 60vw;
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      & li {
+        font-size: 18px;
+        font-weight: 700;
+
+        & a {
+          position: relative;
+          color: #fff;
+          &:hover span {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 2px;
+            color: inherit;
+          }
+        }
+      }
+    }
+  }
+}
