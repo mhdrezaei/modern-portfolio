@@ -35,7 +35,14 @@ textarea,
 select {
   font: inherit;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
+ul {
+  list-style: none;
+}
 img,
 video,
 canvas,
