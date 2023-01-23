@@ -33,4 +33,22 @@
       }
     }
   }
+
+  &__social {
+    position: absolute;
+    left: 50%;
+    bottom: 1rem;
+    transform: translateX(-50%);
+
+    & ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & li {
+        font-size: 25px;
+        margin: 0 10px;
+      }
+    }
+  }
 }
