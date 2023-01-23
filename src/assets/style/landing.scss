@@ -10,7 +10,6 @@
     position: absolute;
     left: 50%;
     top: 1rem;
-    width: 80vw;
     transform: translateX(-50%);
 
     &__wrap {
@@ -26,6 +25,11 @@
       & li {
         font-size: 18px;
         font-weight: 700;
+      }
+    }
+    @media (max-width: 800px) {
+      & {
+        width: 100vw;
       }
     }
   }
