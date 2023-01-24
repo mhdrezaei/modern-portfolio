@@ -18,10 +18,28 @@
     &--left {
       left: 0;
       top: 6rem;
+      animation: moveleft 30s infinite;
+      @keyframes moveleft {
+        0% {
+          transform: translate3d(0, 0, 0);
+        }
+        100% {
+          transform: translate3d(50%, 0, 0);
+        }
+      }
     }
     &--right {
       right: 0;
       top: 11rem;
+      animation: moveright 30s infinite;
+      @keyframes moveright {
+        0% {
+          transform: translate3d(0, 0, 0);
+        }
+        100% {
+          transform: translate3d(-50%, 0, 0);
+        }
+      }
     }
   }
 }
