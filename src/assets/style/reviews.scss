@@ -1,0 +1,41 @@
+.reviews {
+  position: relative;
+  background-color: #210451;
+  color: #fff;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    .instructor {
+      position: relative;
+      background-color: #0c011f;
+      box-shadow: 0 8px 32px 0 #400c92;
+
+      &__infos {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        font-size: 17px;
+        padding: 1rem;
+      }
+      &__curve {
+        position: absolute;
+        left: 20px;
+        top: -10px;
+        width: 40%;
+        height: 120%;
+        border-radius: 50%;
+        border-left: 2px solid #ff4400;
+        transform: rotate(-20deg);
+        box-shadow: 0 8px 32px 0 #400c92;
+      }
+      &__img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border-right: 2px solid #ff4400;
+      }
+    }
+  }
+}

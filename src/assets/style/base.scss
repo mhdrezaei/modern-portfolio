@@ -49,3 +49,13 @@ canvas,
 svg {
   max-width: 100%;
 }
+
+.section {
+  padding: 1rem;
+  overflow: hidden;
+  min-height: 100vh;
+  padding-top: 5rem;
+  @media (min-width: 650px) {
+    padding: 5rem;
+  }
+}
